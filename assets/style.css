@@ -6,6 +6,7 @@ body{
     font-weight: 400;
 }
 
+/* basic layout for all sections in the website */
 .nav-box, .main-box, .mid-box,.footer-box{
     display: flex;
     justify-content: space-between; 
@@ -14,9 +15,14 @@ body{
     margin: auto;
 }
 
+/* css for navbar section */
 .nav-box{
     margin-top: 60px;
     align-items: center;
+}
+
+.nav-box1 img{
+    cursor: pointer;
 }
 
 .nav-box2{
@@ -32,8 +38,26 @@ body{
     text-decoration: none;
     color: #000;
     margin: 25px; 
+    position: relative;
 }
 
+.nav-box2 a::after{
+    content: '';
+    height: 2px;
+    width: 0%;
+    background:hsl(238, 22%, 44%) ;
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    transition: 0.2s;
+    pointer-events: none;
+}
+
+.nav-box2 a:hover::after{
+    width: 100%;
+}
+
+/* css for main section */
 .main{
     background: url(/assets/image/bg-curve-desktop.svg);
 }
@@ -63,6 +87,7 @@ body{
     margin-top: 85px;
 }
 
+/* css for input and button in the main section */
 .inside-box input{
     height: 37.5px;
     width: 50%;
@@ -81,9 +106,16 @@ body{
     border: none;
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
 }
 
+.inside-box button:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    border-radius: 10px;
+}
 
+/* css for mid section */
 .mid-box{
     margin-top: 300px;
     margin-bottom: 100px;
@@ -123,6 +155,7 @@ body{
     width: 80%;
 }
 
+/* css for testimonial card in the mid section  */
 .testimonial-card{
     width: 40%;
     height: 30%;
@@ -136,6 +169,7 @@ body{
     margin-top: 5px;
 }
 
+/* css for avatar inside the testimonial card  */
 .avatar-card{
     display: flex;
     align-content: center;
@@ -174,6 +208,7 @@ body{
     object-fit: contain;
 }
 
+/* css for lower section  */
 .lower{
      background-color: hsl(238, 22%, 44%);
 }
@@ -232,10 +267,14 @@ body{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.fa fa-facebook-square{
-    color:hsl(243, 87%, 12%) ;
+.lower-box2 button:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    border-radius: 5px;
+
 }
 
+/* css for footer section  */
 .footer{
     background-color: hsl(243, 87%, 12%);
     color: #fff;
@@ -266,6 +305,7 @@ body{
     width: 82.5%;
 }
 
+/* css for div .inside footbox in the footer section  */
 .inside-footbox1,.inside-footbox2, .inside-footbox3{
     display: flex;
     flex-direction: column;
@@ -281,6 +321,7 @@ body{
     padding: 8px 8px;
     border-radius: 50%;
     margin: 0px 5px;
+    cursor: pointer;
 }
 
 .inside-content{
@@ -292,6 +333,7 @@ body{
     margin-right: 15px;
 }
 
+/* css for mobile responsiveness */
 @media screen and (max-width:450px) {
     .main{
         background: url(/assets/image/bg-curve-mobile.svg);
