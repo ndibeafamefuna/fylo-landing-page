@@ -334,7 +334,7 @@ body{
 }
 
 /* css for mobile responsiveness */
-@media screen and (max-width:450px) {
+@media screen and (max-width:650px) {
     .main{
         background: url(/assets/image/bg-curve-mobile.svg);
     }
