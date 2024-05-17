@@ -60,6 +60,9 @@ body{
 /* css for main section */
 .main{
     background-image: url(image/bg-curve-desktop.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .main-box1, .main-box2 {
@@ -337,6 +340,9 @@ body{
 @media screen and (max-width:650px) {
     .main{
         background-image: url(image/bg-curve-mobile.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     
     .nav-box img{
