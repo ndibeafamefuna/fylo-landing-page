@@ -58,10 +58,6 @@ body{
 }
 
 /* css for main section */
-.main{
-    background: url(image/bg-curve-desktop.svg);
-}
-
 .main-box1, .main-box2 {
     width: 45%;
 }
@@ -344,10 +340,6 @@ body{
 
 /* css for mobile responsiveness */
 @media screen and (max-width:650px) {
-    .main{
-        background: url(image/bg-curve-mobile.svg);
-    }
-    
     .nav-box img{
         width: 50%;
         margin-top: 10px;
